@@ -51,6 +51,22 @@ margin-left:auto;
 max-width:800px;
 }
 
+.photo-of-me{
+display:inline;
+float:left;
+width:40%;
+margin-right: 0px;
+margin-left: 540px;
+margin-top: auto;
+margin-bottom: auto;
+}
+
+h3{
+float:inline;
+padding-inline-start: 5px;
+
+}
+
     /*THIS REPLACES MEDIA QUERY 1 - Media query for viewports 960px and wider*/
 @media (min-width: 960px) {
 
