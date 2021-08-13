@@ -67,9 +67,7 @@ padding-inline-start: 5px;
 
 }
 
-    /*THIS REPLACES MEDIA QUERY 1 - Media query for viewports 960px and wider*/
 @media (min-width: 960px) {
-
 h1{
 font-size:2.5rem;
 font-family: "Shadows Into Light";
@@ -90,8 +88,6 @@ padding:5px;
 margin-left:auto;
 margin-right:auto;
 }
-
-/*The following style rules are new*/
 
 #navbar{
 list-style:none;
@@ -123,49 +119,43 @@ color:yellow;
 text-decoration:none;
 }
 
-/*Dropdown styling*/
-
 #navbar ul{
 list-style: none;
 position: absolute;
-left: -9999px; /*Hide off-screen when not hovered over*/
+left: -9999px; 
 }
 #navbar ul li{
-padding-top:5px; /*Between the li items for spacing*/
+padding-top:5px; 
 float:none;
 margin-left:-25px;
 }
 
 #navbar ul a{
-white-space:nowrap; /*Stop text wrapping*/
+white-space:nowrap; 
 }
 
-#navbar li:hover ul{ /*Display the dropdown on hover*/
-left:0; /*Bring back on-screen when needed*/
+#navbar li:hover ul{ 
+left:0; 
 }
 
-#navbar li:hover a{ /*The top link display when a user hovers over sub-menu items*/
+#navbar li:hover a{ 
 text-decoration: none;
 background-color: gray;
 }
 
-#navbar li:hover ul a{ /*The hover state defined a global style for links even before they're hovered over. Here we undo these effects.*/
+#navbar li:hover ul a{ 
 text-decoration:none;
 }
 
-#navbar li:hover ul li a:hover{ /*Defines the most explicit hover states when a user hovers over an individual link.*/
+#navbar li:hover ul li a:hover{ 
 background-color:black;
 }
-
-} /*END MEDIA QUERY 1*/
-    
-/*THIS REPLACES MEDIA QUERY 2 - Media query for viewports 959px and narrower*/
+} 
 
 @media (max-width: 959px) {
-
     h1{
     font-size:1.5rem;
-    color:black; /*I added a font color of black to our <h1> style.*/
+    color:black; 
     font-family: "Shadows Into Light";
     font-style: italic;
     }
@@ -179,10 +169,8 @@ background-color:black;
     article {
     background-color:rgb(199, 136, 95);
     min-height:800px;
-    padding:5px; /*I added some padding to our <article> style.*/
+    padding:5px; 
     }
-    
-    /*The following style rules are new*/
     
     a{
     font-size:1.5rem;
@@ -216,8 +204,6 @@ background-color:black;
     text-decoration:none;
     }
     
-    /* hide submenus in mobile devices */
-    
     #navbar ul li{
     display:none;
     }
@@ -229,5 +215,4 @@ background-color:black;
     border-bottom: thin white solid;
     width:75%;
     }
-    
-    } /*END MEDIA QUERY 2*/
+    }
